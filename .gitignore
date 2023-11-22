@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+flask_session
+.DS_Store
+.venv
+app.db

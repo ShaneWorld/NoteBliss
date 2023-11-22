@@ -1,0 +1,23 @@
+{% extends 'layout_write.html' %}
+
+{% block title %}
+
+    write
+
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <form action="/write" method="post">
+        <div class="mb-3">
+            {{form.title(class="form-control w-auto")}}
+        </div>
+        {{ form.csrf_token }}
+        <div id="fancy-editormd" class="editormd">
+            {{ form.edit(style="display:none;") }}
+        </div>
+        <button type="submit" class="btn btn-outline-primary right-btn vertical-align-btn">Commit</button>
+    </form>
+</div>
+{% endblock %}

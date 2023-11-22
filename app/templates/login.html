@@ -1,0 +1,30 @@
+{% extends "layout_login.html" %}
+
+{% block title %}
+  Login
+{% endblock %}
+
+{% block main %}
+
+<div class="outer-wrap">
+ <div id="center" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded w-10">
+  <div class="center">
+    <img src="../static/src/write.png" alt="login" style="max-width:100px">
+  </div>
+  <br>
+    <form action="/login" method="post">
+      <div class="d-grid gap-3 justify-content-center">
+      {{form.hidden_tag()}}
+      {{ form.csrf_token }}
+      <div>{{form.username(class="form-control w-auto mx-auto")}}</div>
+      <div>{{form.password(class="form-control w-auto mx-auto")}}</div>
+      <div class="center">{{form.login(class="btn btn-primary")}}</div>
+      <div>
+        <p class="center">No account yet? <a href="/register">Register</a></p>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

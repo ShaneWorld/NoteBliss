@@ -1,0 +1,8 @@
+flask
+flask_wtf
+flask_session
+flask_sqlalchemy
+wtf_forms
+werkzeug
+markdown (pip install markdown)
+functools
