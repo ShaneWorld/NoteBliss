@@ -1,15 +1,67 @@
-# Notes
+## Features
 
-#### Video Demo: https://youtu.be/N3_xGNiZtA4
+- Support user registration and login.
 
-#### Description:
+- Support markdown writing notes.
 
-This web app uses flask as the back-end framework, and mainly uses bootstrap to render html pages.
+- Support creating, deleting and previewing notes.
 
-In the config.py file, the initial information of the program is centrally configured.
+- Simple and beautiful UI.
 
-In the app folder, \_\_init\_\_.py is used to initialize the app, create and link the database, register the blueprint, and import the configuration information in config.py. The extension.py file defines the database db and the function login_required for subsequent file references.
+## Local build
 
-In the app folder, it is mainly divided into 6 folders. Among them, templates and static are folders for storing template files and css styles respectively. The database tables are defined in the models folder. The main, edit, and auth folders are three blueprint modules, which are responsible for the home page, editing area, and account management respectively. The \_\_init\_\_.py file in each module creates the blueprint and imports the module's routing functions. forms.py is used to create forms to use flask_WTF. The routes.py file defines routes.
+Using `pythonenv`:
 
-The main purpose of this web program is to write notes, but with the blessing of markdown syntax and flask blueprint, the scalability has been greatly improved. In the future, the functions can be continuously enriched, and the simple and beautiful appearance can all become the advantages of this app.
+- Install pythonenv
+
+    Archlinux:
+
+    ```
+    sudo pacman -S python-virtualenv
+    ```
+
+- Git clone this repository and cd into the dir
+
+- Activate pythonenv
+    
+    [Fish shell](https://github.com/fish-shell/fish-shell):
+
+    ```
+    mkdir pythonenv && cd pythonenv
+    virtualenv pythonenv3_11
+    source pythonenv3_11/bin/activate.fish
+    ```
+
+- Install all requirements
+
+    ```shell
+    pip3 install -r requirements.txt
+    ```
+
+- Run locally
+    
+    In the root directory:
+
+    ```
+    flask run
+    ```
+
+## Known Issues
+
+- Login error sometimes occurs.
+
+- Markdown rendering error.
+
+## TODO
+
+- [ ] Change the Markdown rendering method.
+
+- [ ] Beautify the interface and add more useful features.
+
+## Screenshots
+
+![1](./asserts/4.png)
+![3](./asserts/1.png)
+![4](./asserts/3.png)
+![5](./asserts/2.png)
+

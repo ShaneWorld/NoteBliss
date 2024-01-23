@@ -1,6 +1,7 @@
 __pycache__
 .vscode
 flask_session
+pythonenv
 .DS_Store
 .venv
 app.db
