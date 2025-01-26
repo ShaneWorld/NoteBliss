@@ -1,3 +1,8 @@
+# NoteBliss Web Note APP
+
+> [!NOTE]  
+> Final project for CS50x 2023
+
 ## Features
 
 - Support user registration and login.
@@ -8,34 +13,12 @@
 
 - Simple and beautiful UI.
 
-## Local build
-
-Using `pythonenv`:
-
-- Install pythonenv
-
-    Archlinux:
-
-    ```
-    sudo pacman -S python-virtualenv
-    ```
-
-- Git clone this repository and cd into the dir
-
-- Activate pythonenv
-    
-    [Fish shell](https://github.com/fish-shell/fish-shell):
-
-    ```
-    mkdir pythonenv && cd pythonenv
-    virtualenv pythonenv3_11
-    source pythonenv3_11/bin/activate.fish
-    ```
+## Run
 
 - Install all requirements
 
     ```shell
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 - Run locally
@@ -51,12 +34,6 @@ Using `pythonenv`:
 - Login error sometimes occurs.
 
 - Markdown rendering error.
-
-## TODO
-
-- [ ] Change the Markdown rendering method.
-
-- [ ] Beautify the interface and add more useful features.
 
 ## Screenshots
 
