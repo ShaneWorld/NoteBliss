@@ -37,8 +37,8 @@
 
 ## Screenshots
 
-![1](./asserts/4.png)
-![3](./asserts/1.png)
-![4](./asserts/3.png)
-![5](./asserts/2.png)
+![1](./assets/4.png)
+![3](./assets/1.png)
+![4](./assets/3.png)
+![5](./assets/2.png)
 
